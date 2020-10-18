@@ -45,8 +45,15 @@ class YearController(object):
                 # get body from put request
                 winners_in_year = json.loads(cherrypy.request.body.read().decode('utf-8'))
 
-                # call helper function to make data of the form {year: {'MLB': 'White Sox', 'NBA' : 'Bulls'....}}
-                self.cdb.set_year(year, winners_in_year)
+                try:
+                    # call helper function to make data of the form {year: {'MLB': 'White Sox', 'NBA' : 'Bulls'....}}
+                    self.cdb.set_year(year, winners_in_year)
+
+                # catch  errors
+                except Exception as ex:
+                        output['result'] = 'error'
+                        output['message'] = str(ex)
+
 
                 return json.dumps(output)
 
