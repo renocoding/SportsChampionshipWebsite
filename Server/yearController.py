@@ -49,3 +49,38 @@ class YearController(object):
                 self.cdb.set_year(year, winners_in_year)
 
                 return json.dumps(output)
+
+
+        def POST_INDEX(self):
+                '''when POST for /year/ comes in, we add that year and the corresponding winners to the cdb'''
+
+                # default response
+                output = {'result' : 'success'}
+
+                # get input body
+                data = json.loads(cherrypy.request.body.read().decode('utf-8'))
+
+                # data is in form of {year: {'MLB': 'White Sox', 'NBA' : 'Bulls'....}}, we then add this data in the same form to cdb
+                try:
+                    self.cdb.year_data[data.keys()[0]] = data[data.keys()[0]]
+                except Exception as ex:
+                    output['result'] = 'error'
+                    output['message'] = str(ex)
+
+                return json.dumps(output)
+
+        def DELETE_KEY(self, year):
+            '''when DELETE for /years/year comes in, we remove just that year from cdb'''
+
+            # default output
+            output = {'result' : 'success'}
+
+            # call helper function to remove data associated with that year
+            try:
+                self.cdb.delete_movie(year)
+
+            except Exception as ex:
+                output['result'] = 'error'
+                output['message'] = str(ex)
+
+            return json.dumps(output)
