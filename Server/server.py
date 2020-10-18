@@ -2,6 +2,9 @@ import cherrypy
 from yearController import YearController
 from cityController import CityController
 from resetController import ResetController
+
+import sys
+sys.path.insert(1, "../OOAPI")
 from _champ_library import champ_database
 
 

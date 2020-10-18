@@ -11,7 +11,7 @@ class champ_database:
     def load_city_data(self, filename):
 
         # json parsing in python, source used - https://www.geeksforgeeks.org/read-json-file-using-python/
-        json_file = open("data_by_year_start1940.json");
+        json_file = open("../OOAPI/data_by_year_start1940.json");
         json_data = json.load(json_file)
 
         # loop through each year
@@ -35,7 +35,7 @@ class champ_database:
         print("Loading year data...")
 
         # json parsing in python, source used - https://www.geeksforgeeks.org/read-json-file-using-python/
-        json_file = open("data_by_year_start1940.json");
+        json_file = open("../OOAPI/data_by_year_start1940.json");
         json_data = json.load(json_file)
 
         # loop through each year
