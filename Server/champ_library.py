@@ -76,11 +76,11 @@ class champ_database:
 
     def delete_year(self, year):
         # simply delete key-val pair for given year
-        del(self.year_data(year))
+        del(self.year_data[year])
 
     def delete_city(self, city):
         # simply delete key-val pair for given city
-        del(self.city_data(city))
+        del(self.city_data[city])
 
     def set_year(self, year, data):
         # add data to associated year in database

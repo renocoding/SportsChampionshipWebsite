@@ -13,13 +13,12 @@ class CityController(object):
         self.cdb.load_city_data('data_by_year_start1940.json')
 
     def GET_KEY(self, city_id):
-    '''when GET request for /cities/city_id comes in, then we respond with json string'''
-            output = {'result':'success'}
+        '''when GET request for /cities/city_id comes in, then we respond with json string'''
+        output = {'result':'success'}
 
         try:
             championships = self.cdb.get_city(city_id)
-            if movie is not None:
-                output['id'] = movie_id
+            if championship is not None:
                 output['championships'] = championships
             else:
                 output['result'] = 'error'
@@ -31,7 +30,7 @@ class CityController(object):
         return json.dumps(output)
 
     def PUT_KEY(self, city_id):
-    '''when PUT request for /movies/movie_id comes in, then we change that movie in the cdb'''
+        '''when PUT request for /cities/city comes in, then we change that city in the cdb'''
         output = {'result':'success'}
 
         try:
@@ -46,7 +45,7 @@ class CityController(object):
 
 
     def POST_INDEX(self):
-    '''when POST for /movies/ comes in, we take title and genres from body of request, and respond with the new movie_id and more'''
+        '''when POST for /cities/ comes in, we add data of the form {'city' : 20} and add it to the cdb'''
         output = {'result' : 'success'}
         data = json.loads(cherrypy.request.body.read().decode('utf-8'))
 
@@ -60,7 +59,7 @@ class CityController(object):
         return json.dumps(output)
 
     def DELETE_KEY(self, city_id):
-    '''when DELETE for /movies/ comes in, we remove each existing movie from cdb object'''
+        '''when DELETE for /cities/ comes in, we remove that city from cdb object'''
         output = {'result' : 'success'}
         # main operation
         try:
