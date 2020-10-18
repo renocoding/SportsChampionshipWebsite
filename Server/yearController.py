@@ -1,6 +1,8 @@
 import cherrypy
 import re, json
-from champ_library import champ_database
+import sys
+sys.path.insert(1, "../OOAPI")
+from _champ_library import champ_database
 
 class YearController(object):
 
