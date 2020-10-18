@@ -11,6 +11,7 @@ def start_service():
     cdb = champ_database()
     yearController     = YearController(cdb=cdb)
     cityController     = CityController(cdb=cdb)
+    resetController     = ResetController(cdb=cdb)
 
     # connect year handlers
     dispatcher.connect('year_get', '/years/:year', controller=yearController, action = 'GET_KEY', conditions=dict(method=['GET']))
@@ -24,7 +25,8 @@ def start_service():
     dispatcher.connect('city_delete', '/cities/:city', controller=cityController, action = 'DELETE_KEY', conditions=dict(method=['DELETE']))
     dispatcher.connect('city_index_post', '/cities/', controller=cityController, action = 'POST_INDEX', conditions=dict(method=['POST']))
 
-
+    # connect reset handler
+    dispatcher.connect('reset_index_put', '/reset/', controller=resetController, action = 'PUT_KEY', conditions=dict(method=['PUT']))
 
     conf = {
 	'global': {
