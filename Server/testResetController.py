@@ -10,8 +10,15 @@ class TestReset(unittest.TestCase):
     YEARS_URL = SITE_URL + '/years/'
     RESET_URL = SITE_URL + '/reset/'
 
+    def is_json(self, resp):
+        try:
+            json.loads(resp)
+            return True
+        except ValueError:
+            return False
+
     def test_put_reset_cities(self):
-        city = 'Houton, TX'
+        city = 'Houston, TX'
         expected = {'championships':3}
         altered = {'championships':100}
 
@@ -41,9 +48,14 @@ class TestReset(unittest.TestCase):
             'NBA': 'San Antonio Spurs', 'NCAA Basketball (W)': 'Baylor Bears', 'MLB': 'Chicago White Sox'}
         altered = {'NCAA Football (M)': 'Notre Dame', 'NFL': 'Notre Dame', 'NCAA Basketball (M)': 'Notre Dame',
             'NBA': 'Notre Dame', 'NCAA Basketball (W)': 'Notre Dame', 'MLB': 'Notre Dame'}
+<<<<<<< HEAD
     
         #  changes 2005 so that its all notre dame
         r = requests.put(self.YEARS_URL + year, data = json.dumps(altered)) 
+=======
+
+        r = requests.put(self.YEARS_URL + year, data = json.dumps(altered))
+>>>>>>> d54b2e22c7e9e447949dd069b4e52a34913f126b
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))
         self.assertEqual(resp['result'], 'success')
@@ -61,7 +73,11 @@ class TestReset(unittest.TestCase):
         self.assertEqual(resp['result'], 'success')
 
         # see if request matches expected
+<<<<<<< HEAD
         self.assertEqual(resp['2005'], expected)        
+=======
+        self.assertEqual(resp['championship_data'], expected)
+>>>>>>> d54b2e22c7e9e447949dd069b4e52a34913f126b
 
 
 if __name__ == "__main__":

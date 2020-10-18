@@ -12,7 +12,7 @@ class ResetController(object):
 
 
     def PUT_INDEX(self):
-	'''when PUT request comes in to /reset/ endpoint, then the cities and years database is reloaded'''
+        '''when PUT request comes in to /reset/ endpoint, then the cities and years database is reloaded'''
         output = {'result':'success'}
 
         self.cdb.__init__()

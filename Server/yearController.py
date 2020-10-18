@@ -69,7 +69,7 @@ class YearController(object):
 
             # data is in form of {year: {'MLB': 'White Sox', 'NBA' : 'Bulls'....}}, we then add this data in the same form to cdb
             try:
-                self.cdb.year_data[data.keys()[0]] = data[data.keys()[0]]
+                self.cdb.year_data[list(data.keys())[0]] = data[list(data.keys())[0]]
             except Exception as ex:
                 output['result'] = 'error'
                 output['message'] = str(ex)
