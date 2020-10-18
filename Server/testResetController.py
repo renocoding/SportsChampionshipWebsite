@@ -35,7 +35,6 @@ class TestReset(unittest.TestCase):
         r2 = requests.get(self.CITIES_URL + city)
         self.assertTrue(self.is_json(r2.content.decode('utf-8')))
         resp2 = json.loads(r2.content.decode())
-        print(resp2)
 
         self.assertEqual(resp2['championships'], expected['championships'])
 
