@@ -8,7 +8,7 @@ class TestCitiesController(unittest.TestCase):
     print("Testing for server: " + SITE_URL)
     CITIES_URL = SITE_URL + '/cities/'
     RESET_URL = SITE_URL +'/reset/'
- 
+
     def reset_data(self):
         r = requests.put(self.RESET_URL)
 
@@ -49,7 +49,7 @@ class TestCitiesController(unittest.TestCase):
         r = requests.get(self.CITIES_URL + city)
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))
-        self.assertEqual(resp['championships'], 10)         # checks using a get that the put was correct
+        self.assertEqual(resp['championships'], 15)         # checks using a get that the put was correct
 
     def test_cities_post(self):
         self.reset_data()
@@ -61,14 +61,14 @@ class TestCitiesController(unittest.TestCase):
         resp = json.loads(r.content.decode())
         self.assertEqual(resp['result'], 'success')
 
-        r = requests.get(self.CITIES_URL + c.keys()[0])
+        r = requests.get(self.CITIES_URL + list(c.keys())[0])
         self.assertTrue(self.is_json(r.content.decode()))
         resp = json.loads(r.content.decode())
         self.assertEqual(resp['championships'], 50)
 
     def test_cities_delete_key(self):
         self.reset_data()
-        
+
         city = 'Houston, TX'
 
         r = requests.delete(self.CITIES_URL + city)
@@ -80,7 +80,7 @@ class TestCitiesController(unittest.TestCase):
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))
         self.assertEqual(resp['result'], 'error')
-)
+
 
 
 if __name__ == "__main__":

@@ -4,9 +4,10 @@ import json
 
 class TestYearController(unittest.TestCase):
 
-    SITE_URL = 'http://localhost/:51081' # replace with your assigned port id
+    SITE_URL = 'http://localhost:51081' # replace with your assigned port id
     print("Testing for server: " + SITE_URL)
     YEARS_URL = SITE_URL + '/years/'
+    RESET_URL = SITE_URL + '/reset/'
 
     def reset_data(self):
         r = requests.put(self.RESET_URL)
@@ -32,7 +33,7 @@ class TestYearController(unittest.TestCase):
         resp = json.loads(r.content.decode('utf-8'))
 
         # see if request matches expected
-        self.assertEqual(resp['2005'], expected)
+        self.assertEqual(resp['championship_data'], expected)
 
     def test_years_put_key(self):
         self.reset_data()
@@ -44,10 +45,10 @@ class TestYearController(unittest.TestCase):
         resp = json.loads(r.content.decode('utf-8'))
 
         # make sure get request works
-        self.assertTrue(resp['2005'], {'NCAA Football (M)': 'USC Trojans', 'NFL': 'New England Patriots', 'NCAA Basketball (M)': 'North Carolina Tar Heels', 'NBA': 'San Antonio Spurs', 'NCAA Basketball (W)': 'Baylor Bears', 'MLB': 'Chicago White Sox'})
+        self.assertTrue(resp['championship_data'], {'NCAA Football (M)': 'USC Trojans', 'NFL': 'New England Patriots', 'NCAA Basketball (M)': 'North Carolina Tar Heels', 'NBA': 'San Antonio Spurs', 'NCAA Basketball (W)': 'Baylor Bears', 'MLB': 'Chicago White Sox'})
 
         # make put request
-        data_to_enter = {{'MLB': "Chicago White Sox", "NBA" : "Houston  Rockets"}}
+        data_to_enter = {'MLB': "Chicago White Sox", "NBA" : "Houston  Rockets"}
         r = requests.put(self.YEARS_URL + year, data = json.dumps(data_to_enter))
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))
@@ -58,7 +59,7 @@ class TestYearController(unittest.TestCase):
         r = requests.get(self.YEARS_URL + year)
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))
-        self.assertEqual(resp['2005'], data_to_enter)
+        self.assertEqual(resp['championship_data'], data_to_enter)
 
 
     def test_years_index_post(self):
@@ -79,11 +80,11 @@ class TestYearController(unittest.TestCase):
         r = requests.get(self.YEARS_URL + "2040")
         self.assertTrue(self.is_json(r.content.decode()))
         resp = json.loads(r.content.decode())
-        self.assertEqual(resp['2040'], data_to_enter['2040'])
+        self.assertEqual(resp['championship_data'], data_to_enter['2040'])
 
     def test_years_delete_key(self):
         self.reset_data()
-        
+
         year = '2005'
 
         # make sure delete works
@@ -93,7 +94,7 @@ class TestYearController(unittest.TestCase):
         self.assertEqual(resp['result'], 'success')
 
         # make sure get on the same year actually works
-        r = requests.get(self.MOVIES_URL + str(movie_id))
+        r = requests.get(self.YEARS_URL + year)
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))
         self.assertEqual(resp['result'], 'error')

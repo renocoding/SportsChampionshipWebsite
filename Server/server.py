@@ -1,6 +1,7 @@
 import cherrypy
 from yearController import YearController
 from cityController import CityController
+from resetController import ResetController
 from champ_library import champ_database
 
 
@@ -26,7 +27,7 @@ def start_service():
     dispatcher.connect('city_index_post', '/cities/', controller=cityController, action = 'POST_INDEX', conditions=dict(method=['POST']))
 
     # connect reset handler
-    dispatcher.connect('reset_index_put', '/reset/', controller=resetController, action = 'PUT_KEY', conditions=dict(method=['PUT']))
+    dispatcher.connect('reset_index_put', '/reset/', controller=resetController, action = 'PUT_INDEX', conditions=dict(method=['PUT']))
 
     conf = {
 	'global': {

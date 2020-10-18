@@ -32,6 +32,8 @@ class champ_database:
 
     def load_year_data(self, filename):
 
+        print("Loading year data...")
+
         # json parsing in python, source used - https://www.geeksforgeeks.org/read-json-file-using-python/
         json_file = open("data_by_year_start1940.json");
         json_data = json.load(json_file)

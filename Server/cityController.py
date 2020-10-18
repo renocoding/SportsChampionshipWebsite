@@ -43,12 +43,12 @@ class CityController(object):
             data = json.loads(cherrypy.request.body.read().decode('utf-8'))
 
             # call helper function to change data of existing city
-            champs = int(data['championshps'])
+            champs = int(data['championships'])
             self.cdb.set_city(city, champs)
 
         except Exception as ex:
             output['result'] = 'error'
-            outout['message'] = str(ex)
+            output['message'] = str(ex)
 
         return json.dumps(output)
 
@@ -60,7 +60,7 @@ class CityController(object):
 
         # create new city in database and assign it the corresponding number of 'ships
         try:
-            self.cdb.city_data[data.keys()[0]] = data[data.keys()[0]]
+            self.cdb.city_data[list(data.keys())[0]] = data[list(data.keys())[0]]
         except Exception as ex:
             output['result'] = 'error'
             output['message'] = str(ex)
