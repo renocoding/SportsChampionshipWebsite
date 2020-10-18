@@ -12,14 +12,18 @@ class CityController(object):
 
         self.cdb.load_city_data('data_by_year_start1940.json')
 
-    def GET_KEY(self, city_id):
-        '''when GET request for /cities/city_id comes in, then we respond with json string'''
+    def GET_KEY(self, city):
+        '''when GET request for /cities/city comes in, then we respond with json string'''
         output = {'result':'success'}
 
         try:
-            championships = self.cdb.get_city(city_id)
-            if championship is not None:
+
+            # get num championships for city if possible
+            championships = self.cdb.get_city(city)
+            if championships is not None:
                 output['championships'] = championships
+
+            # city not in cdb
             else:
                 output['result'] = 'error'
                 output['message'] = 'city not found'
@@ -29,14 +33,19 @@ class CityController(object):
 
         return json.dumps(output)
 
-    def PUT_KEY(self, city_id):
+    def PUT_KEY(self, city):
         '''when PUT request for /cities/city comes in, then we change that city in the cdb'''
         output = {'result':'success'}
 
         try:
+
+            # get body
             data = json.loads(cherrypy.request.body.read().decode('utf-8'))
+
+            # call helper function to change data of existing city
             champs = int(data['championshps'])
-            self.cdb.set_city(city_id, champs)
+            self.cdb.set_city(city, champs)
+
         except Exception as ex:
             output['result'] = 'error'
             outout['message'] = str(ex)
@@ -45,25 +54,26 @@ class CityController(object):
 
 
     def POST_INDEX(self):
-        '''when POST for /cities/ comes in, we add data of the form {'city' : 20} and add it to the cdb'''
+        '''when POST for /cities/ comes in, we add data of the form {'Chicago, IL' : 20} and add it to the cdb'''
         output = {'result' : 'success'}
         data = json.loads(cherrypy.request.body.read().decode('utf-8'))
 
-        # perform main operation
+        # create new city in database and assign it the corresponding number of 'ships
         try:
-            self.cdb.city_data[data.keys()[0]] = data['champioships']
+            self.cdb.city_data[data.keys()[0]] = data[data.keys()[0]]
         except Exception as ex:
             output['result'] = 'error'
             output['message'] = str(ex)
 
         return json.dumps(output)
 
-    def DELETE_KEY(self, city_id):
+
+    def DELETE_KEY(self, city):
         '''when DELETE for /cities/ comes in, we remove that city from cdb object'''
         output = {'result' : 'success'}
         # main operation
         try:
-            self.cdb.delete_city(city_id)
+            self.cdb.delete_city(city)
 
         except Exception as ex:
             output['result'] = 'error'
