@@ -15,21 +15,25 @@ class TestReset(unittest.TestCase):
         expected = {'championships':3}
         altered = {'championships':100}
 
-        r = requests.put(self.CITIES_URL + city, data = json.dumps(altered))
+        # change houston to 100
+        r = requests.put(self.CITIES_URL + city, data = json.dumps(altered))  
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))
         self.assertEqual(resp['result'], 'success')
 
-        r = requests.put(self.RESET_URL)
+        # resets the data so houston is 3 again
+        r = requests.put(self.RESET_URL)                           
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode())
         self.assertEqual(resp['result'], 'success')
 
-        r2 = requests.get(self.CITIES_URL + city)
+        # gets houston data after rest
+        r2 = requests.get(self.CITIES_URL + city)                   
         self.assertTrue(self.is_json(r2.content.decode('utf-8')))
         resp2 = json.loads(r2.content.decode())
 
-        self.assertEqual(resp2['championships'], expected['championships'])
+        # check that houston is  3  again
+        self.assertEqual(resp2['championships'], expected['championships']) 
 
     def test_put_reset_years(self):
         year = '2005'
@@ -37,24 +41,27 @@ class TestReset(unittest.TestCase):
             'NBA': 'San Antonio Spurs', 'NCAA Basketball (W)': 'Baylor Bears', 'MLB': 'Chicago White Sox'}
         altered = {'NCAA Football (M)': 'Notre Dame', 'NFL': 'Notre Dame', 'NCAA Basketball (M)': 'Notre Dame',
             'NBA': 'Notre Dame', 'NCAA Basketball (W)': 'Notre Dame', 'MLB': 'Notre Dame'}
-	
-        r = requests.put(self.YEARS_URL + year, data = json.dumps(altered))
+    
+        #  changes 2005 so that its all notre dame
+        r = requests.put(self.YEARS_URL + year, data = json.dumps(altered)) 
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))
         self.assertEqual(resp['result'], 'success')
 
-        r = requests.put(self.RESET_URL)
+        # resets  2005 to correct data
+        r = requests.put(self.RESET_URL)                           
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode())
         self.assertEqual(resp['result'], 'success')
 
-        r = requests.get(self.YEARS_URL + year)
+        # gets data after correction
+        r = requests.get(self.YEARS_URL + year)                     
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))
         self.assertEqual(resp['result'], 'success')
 
         # see if request matches expected
-        self.assertEqual(resp['2005'], expected)
+        self.assertEqual(resp['2005'], expected)        
 
 
 if __name__ == "__main__":
