@@ -8,6 +8,9 @@ class TestYearController(unittest.TestCase):
     print("Testing for server: " + SITE_URL)
     YEARS_URL = SITE_URL + '/years/'
 
+    def reset_data(self):
+        r = requests.put(self.RESET_URL)
+
     def is_json(self, resp):
         try:
             json.loads(resp)
@@ -16,6 +19,7 @@ class TestYearController(unittest.TestCase):
             return False
 
     def test_years_key_get(self):
+        self.reset_data()
 
         # year and the exepcted
         year = '2005'
@@ -31,6 +35,7 @@ class TestYearController(unittest.TestCase):
         self.assertEqual(resp['2005'], expected)
 
     def test_years_put_key(self):
+        self.reset_data()
 
         # make initial get request
         year = "2005"
@@ -57,6 +62,7 @@ class TestYearController(unittest.TestCase):
 
 
     def test_years_index_post(self):
+        self.reset_data()
 
         # year and data to be entered
         data_to_enter = {'2040' : {'MLB': "Mars Aliens", "NBA" : "Chicago Bulls"}}
@@ -75,7 +81,9 @@ class TestYearController(unittest.TestCase):
         resp = json.loads(r.content.decode())
         self.assertEqual(resp['2040'], data_to_enter['2040'])
 
-    def test_years_delete_key(self)
+    def test_years_delete_key(self):
+        self.reset_data()
+        
         year = '2005'
 
         # make sure delete works
