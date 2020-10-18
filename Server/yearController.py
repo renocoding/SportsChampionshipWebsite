@@ -1,6 +1,6 @@
 import cherrypy
 import re, json
-from champ_library import champ_database
+from _champ_library import champ_database
 
 class YearController(object):
 
