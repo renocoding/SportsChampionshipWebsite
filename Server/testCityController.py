@@ -24,6 +24,7 @@ class TestCitiesController(unittest.TestCase):
 
         city = 'Houston, TX'
 
+        # make sure get request returns 3, which is number of championships in houston
         r = requests.get(self.CITIES_URL + city)
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))
@@ -34,11 +35,13 @@ class TestCitiesController(unittest.TestCase):
 
         city = 'Houston, TX'
 
+        # get request
         r = requests.get(self.CITIES_URL + city)
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))
         self.assertEqual(resp['championships'], 3)          # checks that total champs is correct ie: 3
 
+        # put request to change value
         c = {}
         c['championships'] = 15
         r = requests.put(self.CITIES_URL + city, data = json.dumps(c))
@@ -46,6 +49,7 @@ class TestCitiesController(unittest.TestCase):
         resp = json.loads(r.content.decode('utf-8'))
         self.assertEqual(resp['result'], 'success')         # checks that we update city to 10
 
+        # make sure value has changed
         r = requests.get(self.CITIES_URL + city)
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))
@@ -54,6 +58,7 @@ class TestCitiesController(unittest.TestCase):
     def test_cities_post(self):
         self.reset_data()
 
+        # make put request for new city
         c = {}
         c['Steubenville, OH'] = 50
         r = requests.post(self.CITIES_URL, data = json.dumps(c))
@@ -61,6 +66,7 @@ class TestCitiesController(unittest.TestCase):
         resp = json.loads(r.content.decode())
         self.assertEqual(resp['result'], 'success')
 
+        # make sure database reflects change using get request
         r = requests.get(self.CITIES_URL + list(c.keys())[0])
         self.assertTrue(self.is_json(r.content.decode()))
         resp = json.loads(r.content.decode())
@@ -71,11 +77,13 @@ class TestCitiesController(unittest.TestCase):
 
         city = 'Houston, TX'
 
+        # delete data associatd with Houston
         r = requests.delete(self.CITIES_URL + city)
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))
         self.assertEqual(resp['result'], 'success')
 
+        # make sure following get request fails
         r = requests.get(self.CITIES_URL + city)
         self.assertTrue(self.is_json(r.content.decode('utf-8')))
         resp = json.loads(r.content.decode('utf-8'))

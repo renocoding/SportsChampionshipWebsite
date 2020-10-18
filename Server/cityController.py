@@ -21,6 +21,7 @@ class CityController(object):
             # get num championships for city if possible
             championships = self.cdb.get_city(city)
             if championships is not None:
+                output['city'] = city
                 output['championships'] = championships
 
             # city not in cdb
