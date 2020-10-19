@@ -13,5 +13,5 @@ TESTING:
 In order to  run the server run the file 'server.py found in the 'Server' directory on a different 
 window.  The server is currently set to run on 'localhost'. Then while in the 'Server' directory, run 'python test_requests.py' to run our test that make sure the controllers and handlers are wokring correctly. To just test the OO API, go into the 'OOAPI' directory and run 'python3 test_OOAPI.py'. The server does not need to be running to test this.
 
-JSON SPECIFICATION
+JSON SPECIFICATION:
 To see json specification, click on the following link: https://docs.google.com/document/d/1TDIrrV_5wHV8K28aR1vJk4iekL0Xt5zJkR2hsd3nV2c/edit
