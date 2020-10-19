@@ -59,6 +59,46 @@ class TestOOAPI(unittest.TestCase):
         result_get_year = cdb.get_year(year)
         self.assertEqual(result_get_year, None)
 
+    def test_get_city(self):
+
+        # initalize database
+        cdb = champ_database()
+        cdb.load_city_data("data_by_year_start1940.json")
+        city = 'Houston, TX'
+        expected = 3
+
+        # call get city
+        result_get_city = cdb.get_city(city)
+
+        # see if get_city matches expected
+        self.assertEqual(result_get_city, expected)
+
+    def test_set_city(self):
+        # initalize database
+        cdb = champ_database()
+        #cdb.load_city_data("data_by_year_start1940.json")
+    
+        # change cdb using set
+        city = "Steubenville, OH"
+        expected = 100
+        cdb.set_city(city, expected)
+
+        # see if get_city matches expected
+        result_get_city = cdb.get_city(city)
+        self.assertEqual(result_get_city, expected)
+
+    def test_delete_city(self):
+        #initalize database
+        cdb = champ_database()
+        cdb.load_city_data("data_by_year_start1940.json")
+        city = "Houston, TX"
+
+        # change cdb using delete
+        cdb.delete_city(city)
+
+        # see if get_city matches None type
+        result_get_city = cdb.get_city(city)
+        self.assertEqual(result_get_city, None)
 
 
 
