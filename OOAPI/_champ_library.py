@@ -29,6 +29,7 @@ class champ_database:
                    self.city_data[sport['winner_metro']] = 1 + self.city_data.get(sport['winner_metro'], 0)
                 elif sport['level'] == "college" and sport['sport'] == "Football (M)":
                    self.city_data[sport['winner_metro']] = 1 + self.city_data.get(sport['winner_metro'], 0)
+        json_file.close()
 
     def load_year_data(self, filename):
 
@@ -54,7 +55,7 @@ class champ_database:
                    self.year_data[year]["NCAA Basketball (W)"] = sport['winner']
                 elif sport['level'] == "college" and sport['sport'] == "Football (M)":
                    self.year_data[year]["NCAA Football (M)"] = sport['winner']
-
+        json_file.close()
 
     def get_year(self, year):
 
@@ -78,11 +79,15 @@ class champ_database:
 
     def delete_year(self, year):
         # simply delete key-val pair for given year
-        del(self.year_data[year])
+        try:
+            del(self.year_data[year])
+        except Exception as ex:
+            print(str(ex))
 
     def delete_city(self, city):
         # simply delete key-val pair for given city
         del(self.city_data[city])
+
 
     def set_year(self, year, data):
         # add data to associated year in database
