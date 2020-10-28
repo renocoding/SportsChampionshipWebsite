@@ -36,6 +36,21 @@ class CityController(object):
 
         return json.dumps(output)
 
+    def GET_INDEX(self):
+        '''when GET request for /cities/ comes in, we respond with all the cities'''
+        output = {'result':'success'}
+        output['cities'] = []
+
+        try:
+            for city in self.cdb.get_cities():
+                output['cities'].append(city)
+        except Exception as ex:
+            output['result'] = 'error'
+            output['message'] = str(ex)
+
+        return json.dumps(output)
+
+
     def PUT_KEY(self, city):
         '''when PUT request for /cities/city comes in, then we change that city in the cdb'''
         output = {'result':'success'}
