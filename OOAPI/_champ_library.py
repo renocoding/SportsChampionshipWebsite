@@ -77,6 +77,9 @@ class champ_database:
 
         return championships
 
+    def get_cities(self):
+        return self.city_data.keys()
+
     def delete_year(self, year):
         # simply delete key-val pair for given year
         try:
