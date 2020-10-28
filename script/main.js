@@ -1,3 +1,7 @@
+///////////////////////////
+///////INITIAL TASKS///////
+///////////////////////////
+
 console.log('page load - entered main.js for js-other api');
 
 var sendButton1 = document.getElementById('send-button1');
