@@ -7,10 +7,11 @@
 		<title>Title</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">]
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             ul.listpad{
                 padding-bottom: 50px;
+				padding-top: 20px;
                 padding-left: 0px;
                 list-style-type:none;
             }
@@ -19,33 +20,34 @@
 	<body>
         <div class="jumbotron" style="background:#2c76c8">
         	<div class="container">
-        		<h1 style="color:;" class="jumbotronic">American Sports History</h1>
-        		<h6 style=" color:">A summary of champions</h6>
+        		<h1 style="color:;" class="jumbotronic">American Sports Championship History</h1>
+        		<h6 style=" color:">Organized by Year and City</h6>
         	</div>
         </div>
         <div class="col-sm-12">
-            <p class="lead">Option 1: Search a Specific Year</p>
+            <p class="lead">Feature 1: See the Champions in a Year</p>
             <form class="bsr-form " action="">
             	<div class="form-group">
             		<label for="checkboxes">Select a year</label>
-            		<select class="form-control" id="select-9533696">
-            			<option>1999</option>
-            			<option>1998</option>
-            			<option>1997</option>
-            			<option>1996</option>
-            			<option>1995</option>
+            		<select class="form-control" id="select-year">
+            			<option>1940</option>
             		</select>
             	</div>
             </form>
-            <ul class=' listpad'>
+			<button type="submit" class="btn btn-primary" id="send-button1">Go</button>
+            <ul class='listpad'>
             	<li>MLB: </li>
             	<li>NFL: </li>
             	<li>NBA: </li>
             	<li>NHL: </li>
+				<li>NCAA Basketball (M): </li>
+				<li>NCAA Basketball (W): </li>
+				<li>NCAA Football (M): </li>
             </ul>
+
         </div>
         <div class="col-sm-12">
-            <p class="lead">Option 2: Compare 2 Cities</p>
+            <p class="lead">Feature 2: Compare the Number of Championships in Two Cities</p>
         </div>
         <div class="col-sm-6">
             <form class="bsr-form " action="">
@@ -60,8 +62,9 @@
             		</select>
             	</div>
             </form>
+			<button type="submit" class="btn btn-primary" id="send-button2" style="padding-bottom: 10px">Go</button>
             <div class="thumbnail">
-            	<h6 class="short-round center-block" style="font-size: 150px; height: 330px; width: 330px; padding: 60px; border-radius: 375px; background: #a4c2f4;"></h6>
+            	<h6 class="short-round center-block" style="font-size: 150px; height: 200px; width: 200px; padding: 10px; border-radius: 375px; background: #a4c2f4;"></h6>
             	<p class="push-down-1 text-center">Number of Championships</p>
             </div>
         </div>
@@ -79,7 +82,7 @@
             	</div>
             </form>
             <div class="thumbnail">
-            	<h6 class="short-round center-block" style="font-size: 100px; height: 220.00000000000003px; width: 220.00000000000003px; padding: 40px; border-radius: 250px; background: #6d9eeb;"></h6>
+            	<h6 class="short-round center-block" style="font-size: 100px; height: 410px; width: 410px; padding: 10px; border-radius: 250px; background: #6d9eeb;"></h6>
             	<p class="push-down-1 text-center">Number of Championships</p>
             </div>
         </div>
@@ -90,6 +93,7 @@
     				<p class="text-muted">Copyright © 2020 Joe Kuebler and Reno Domel</p>
     		</div>
 		</footer>
+		<script src="script/main.js"></script>
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>

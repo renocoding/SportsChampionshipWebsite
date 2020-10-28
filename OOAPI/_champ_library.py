@@ -29,7 +29,9 @@ class champ_database:
                    self.city_data[sport['winner_metro']] = 1 + self.city_data.get(sport['winner_metro'], 0)
                 elif sport['level'] == "college" and sport['sport'] == "Football (M)":
                    self.city_data[sport['winner_metro']] = 1 + self.city_data.get(sport['winner_metro'], 0)
+
         json_file.close()
+
 
     def load_year_data(self, filename):
 
