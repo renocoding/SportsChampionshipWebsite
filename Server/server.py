@@ -37,7 +37,7 @@ def start_service():
     dispatcher.connect('city_put', '/cities/:city', controller=cityController, action = 'PUT_KEY', conditions=dict(method=['PUT']))
     dispatcher.connect('city_delete', '/cities/:city', controller=cityController, action = 'DELETE_KEY', conditions=dict(method=['DELETE']))
     dispatcher.connect('city_index_post', '/cities/', controller=cityController, action = 'POST_INDEX', conditions=dict(method=['POST']))
-		 dispatcher.connect('city_index_get', '/cities/', controller=cityController, action = 'GET_INDEX', conditions=dict(method=['GET']))
+    dispatcher.connect('city_index_get', '/cities/', controller=cityController, action = 'GET_INDEX', conditions=dict(method=['GET']))
 
 
     # connect reset handler
