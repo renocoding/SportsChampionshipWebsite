@@ -7,6 +7,15 @@ import sys
 sys.path.insert(1, "../OOAPI")
 from _champ_library import champ_database
 
+class optionsController:
+    def OPTIONS(self, *args, **kwargs):
+        return ""
+
+def CORS():
+    cherrypy.response.headers["Access-Control-Allow-Origin"] = "*"
+    cherrypy.response.headers["Access-Control-Allow-Methods"] = "GET, PUT, POST, DELETE, OPTIONS"
+    cherrypy.response.headers["Access-Control-Allow-Credentials"] = "true"
+
 
 def start_service():
     dispatcher = cherrypy.dispatch.RoutesDispatcher()
@@ -32,6 +41,15 @@ def start_service():
     # connect reset handler
     dispatcher.connect('reset_index_put', '/reset/', controller=resetController, action = 'PUT_INDEX', conditions=dict(method=['PUT']))
 
+
+    # cors handlers
+    dispatcher.connect('years_key_options', '/years/:year', controller=optionsController, action = 'OPTIONS', conditions=dict(method=['OPTIONS']))
+    dispatcher.connect('years_options', '/years/', controller=optionsController, action = 'OPTIONS', conditions=dict(method=['OPTIONS']))
+    dispatcher.connect('reset_key_options', '/reset/', controller=optionsController, action = 'OPTIONS', conditions=dict(method=['OPTIONS']))
+    dispatcher.connect('rating_options', '/cities/:city', controller=optionsController, action = 'OPTIONS', conditions=dict(method=['OPTIONS']))
+    dispatcher.connect('rating_options', '/cities/', controller=optionsController, action = 'OPTIONS', conditions=dict(method=['OPTIONS']))
+
+
     conf = {
 	'global': {
             'server.thread_pool': 5, # optional argument
@@ -40,6 +58,7 @@ def start_service():
 	    },
 	'/': {
 	    'request.dispatch': dispatcher,
+        'tools.CORS.on': True,
 	    }
     }
 
@@ -51,4 +70,5 @@ def start_service():
 
 
 if __name__ == '__main__':
+    cherrypy.tools.CORS = cherrypy.Tool('before_finalize', CORS)
     start_service()
