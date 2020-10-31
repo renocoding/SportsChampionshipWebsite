@@ -14,7 +14,7 @@ url = "http://localhost:51081"
 
 
 // UPDATE YEAR SELECT
-// info on adding optionss from stackoverflow
+// info on adding options from stackoverflow
 var yearSelect = document.getElementById("select-year");
 
 for (i = 1941; i < 2019; i++)
@@ -62,6 +62,9 @@ xhr.onload = function(e) { // triggered when response is received
         citySelect2.appendChild(option2)
         i++;
     }
+
+    citySelect.selectedIndex = 4;
+    citySelect2.selectedIndex = 3;
 }
 
 // set up onerror
@@ -69,7 +72,7 @@ xhr.onerror = function(e) { // triggered when error response is received and mus
     console.error(xhr.statusText);
 }
 
-updateCityData("College Station, TX", "College Station, TX");
+updateCityData("Chicago, IL", "Cincinnati, OH");
 
 ///////////////////////
 ///////Functions///////
