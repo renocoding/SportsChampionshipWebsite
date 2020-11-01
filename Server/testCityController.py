@@ -30,6 +30,19 @@ class TestCitiesController(unittest.TestCase):
         resp = json.loads(r.content.decode('utf-8'))
         self.assertEqual(resp['championships'], 3)
 
+    def test_cities_index_get(self):
+        self.reset_data()
+
+        # list of all cities (this is what is returned!)
+        expected = ['College Station, TX', 'Bloomington, IN', 'New York Metro Area', 'Cincinnati, OH', 'Chicago, IL', 'Twin Cities, MN', 'Madison, WI', 'Greater Boston, MA', 'San Francisco Bay Area, CA', 'Toronto, ON', 'St. Louis, MO', 'Washington, DC Metro Area', 'Columbus, OH', 'Cheyenne, WY', 'Metro Detroit, MI', 'Notre Dame, IN', 'Salt Lake City, UT', 'Montreal, QC', 'Green Bay, WI', 'West Point, NY', 'Stillwater, OK', 'Cleveland, OH', 'Worcester, MA', 'Greater Philadelphia, PA', 'Lexington-Fayette, KY', 'Baltimore, MD', 'Ann Arbor, MI', 'Oklahoma City, OK', 'Rochester, NY', 'Greater Los Angeles, CA', 'Knoxville, TN', 'Lawrence, KS', 'East Lansing, MI', 'Syracuse, NY', 'Greater Raleigh, NC', 'Milwaukee, WI', 'Auburn, AL', 'Iowa City, IA', 'Baton Rouge, LA', 'Pittsburgh, PA', 'Oxford, MS', 'Tuscaloosa, AL', 'Austin, TX', 'Northwest Arkansas, AR', 'El Paso, TX', 'Kansas City, MO', 'Lincoln, NE', 'Dallas-Fort Worth, TX', 'Greater Miami Area, FL', 'Portland Metro Area, OR', 'Tallahassee, FL', 'Seattle,WA', 'Richmond, KY', 'Louisville, KY', 'Athens, GA', 'Boise City, ID', 'Greenville, SC', 'Pocatello, ID', 'Monroe, LA', 'State College, PA', 'Columbia, SC', 'Carbondale, IL', 'Edmonton, AB', 'Provo, UT', 'Bozeman, MT', 'Norfolk, VA', 'Statesboro, GA', 'Calgary, AB', 'Las Vegas, NV', 'Atlanta, GA', 'Boulder, CO', 'Youngstown, OH', 'Huntington, WV', 'Lubbock, TX', 'Houston, TX', 'Hartford, CT', 'Missoula, MT', 'Denver, CO', 'Gainesville, FL', 'Tucson, AZ', 'Springfield, MA', 'San Antonio, TX', 'West Lafayette, IN', 'Metro Phoenix, AZ', 'Bowling Green, KY', 'Tampa Bay Area, FL', 'Newark, DE', 'Harrisonburg, VA', 'Waco, TX', 'Boone, NC', 'Indianapolis Metro Area, IN', 'Richmond, VA', 'New Orleans, LA', 'Spokane, WA', 'Fargo, ND']
+
+        # make get index request
+        r = requests.get(self.CITIES_URL)
+        self.assertTrue(self.is_json(r.content.decode('utf-8')))
+        resp = json.loads(r.content.decode('utf-8'))
+        self.assertEqual(resp['cities'], expected)
+
+
     def test_cities_put_key(self):
         self.reset_data()
 
