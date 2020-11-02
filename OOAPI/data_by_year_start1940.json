@@ -9011,7 +9011,19 @@
          "final_four4_metro": "Greater Raleigh, NC"
       }
    ],
-   "2018": [
+  "2018": [
+      {
+         "level": "college",
+         "sport": "Football (M)",
+         "winner": "North Dakota State Bison",
+         "winner_metro": "Fargo, ND",
+         "runner_up": "James Madison Dukes",
+         "runner_up_metro": "Harrisonburg, VA",
+         "final_four3": "",
+         "final_four3_metro": "",
+         "final_four4": "",
+         "final_four4_metro": ""
+      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -9039,14 +9051,14 @@
       {
          "level": "college",
          "sport": "Basketball (M)",
-         "winner": "Loyola Ramblers",
-         "winner_metro": "Chicago, IL",
-         "runner_up": "Kansas State Wildcats",
-         "runner_up_metro": "Manhattan, KS",
-         "final_four3": "Kentucky Wildcats",
-         "final_four3_metro": "Lexington-Fayette, KY",
-         "final_four4": "Nevada Wolf Pack",
-         "final_four4_metro": "Reno, NV"
+         "winner": "Villanova Wildcats",
+         "winner_metro": "Greater Philadelphia, PA",
+         "runner_up": "Michigan Wolverines",
+         "runner_up_metro": "Ann Arbor, MI",
+         "final_four3": "",
+         "final_four3_metro": "",
+         "final_four4": "",
+         "final_four4_metro": ""
       },
       {
          "level": "college",
@@ -9107,6 +9119,93 @@
          "final_four3_metro": "Houston, TX",
          "final_four4": "Milwaukee Brewers",
          "final_four4_metro": "Milwaukee, WI"
+      }
+   ],
+   "2019": [
+      {
+         "level": "college",
+         "sport": "Football (M)",
+         "winner": "Clemson Tigers",
+         "winner_metro": "Greenville, SC",
+         "runner_up": "Alabama Crimson Tide",
+         "runner_up_metro": "Tuscaloosa, AL",
+         "final_four3": "",
+         "final_four3_metro": "",
+         "final_four4": "",
+         "final_four4_metro": ""
+      },
+      {
+         "level": "pro",
+         "sport": "NFL",
+         "winner": "New England Patriots",
+         "winner_metro": "Greater Boston, MA",
+         "runner_up": "Los Angeles Rams",
+         "runner_up_metro": "Greater Los Angeles, CA",
+         "final_four3": "",
+         "final_four3_metro": "",
+         "final_four4": "",
+         "final_four4_metro": ""
+      },
+      {
+         "level": "college",
+         "sport": "Basketball (M)",
+         "winner": "Virginia Cavaliers",
+         "winner_metro": "Charlottesville, VA",
+         "runner_up": "Texas Tech Red Raiders",
+         "runner_up_metro": "Lubbock, TX",
+         "final_four3": "",
+         "final_four3_metro": "",
+         "final_four4": "",
+         "final_four4_metro": ""
+      },
+      {
+         "level": "college",
+         "sport": "Basketball (W)",
+         "winner": "Baylor Bears",
+         "winner_metro": "Waco, TX",
+         "runner_up": "Notre Dame Fighting Irish",
+         "runner_up_metro": "Notre Dame, IN",
+         "final_four3": "",
+         "final_four3_metro": "",
+         "final_four4": "",
+         "final_four4_metro": ""
+      },
+      {
+         "level": "pro",
+         "sport": "NHL",
+         "winner": "St. Louis Blues",
+         "winner_metro": "St. Louis, MO",
+         "runner_up": "Boston Bruins",
+         "runner_up_metro": "Greater Boston, MA",
+         "final_four3": "",
+         "final_four3_metro": "",
+         "final_four4": "",
+         "final_four4_metro": ""
+      },
+      {
+         "level": "pro",
+         "sport": "NBA",
+         "winner": "Toronto Raptors",
+         "winner_metro": "Toronto, ON",
+         "runner_up": "Golden State Warriors",
+         "runner_up_metro": "San Francisco Bay Area, CA",
+         "final_four3": "",
+         "final_four3_metro": "",
+         "final_four4": "",
+         "final_four4_metro": ""
+      },
+
+      {
+         "level": "pro",
+         "sport": "MLB",
+         "winner": "Washington Nationals",
+         "winner_metro": "Greater Boston, MA",
+         "runner_up": "Houston Astros",
+         "runner_up_metro": "Houston, TX",
+         "final_four3": "",
+         "final_four3_metro": "",
+         "final_four4": "",
+         "final_four4_metro": ""
       }
    ]
 }
