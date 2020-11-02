@@ -1316,18 +1316,6 @@
       },
       {
          "level": "college",
-         "sport": "Football (M)",
-         "winner": "UCLA Bruins",
-         "winner_metro": "Greater Los Angeles, CA",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
          "sport": "Basketball (M)",
          "winner": "San Francisco Dons",
          "winner_metro": "San Francisco Bay Area, CA",
@@ -1622,18 +1610,6 @@
       },
       {
          "level": "college",
-         "sport": "Football (M)",
-         "winner": "Ohio State Buckeyes",
-         "winner_metro": "Columbus, OH",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
          "sport": "Basketball (M)",
          "winner": "Kentucky Wildcats",
          "winner_metro": "Lexington-Fayette, KY",
@@ -1718,18 +1694,6 @@
       }
    ],
    "1959": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Iowa Hawkeyes",
-         "winner_metro": "Iowa City, IA",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -1940,18 +1904,6 @@
       },
       {
          "level": "college",
-         "sport": "Football (M)",
-         "winner": "Ole Miss Rebels",
-         "winner_metro": "Oxford, MS",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
          "sport": "Basketball (M)",
          "winner": "Cincinnati Bearcats",
          "winner_metro": "Cincinnati, OH",
@@ -2041,18 +1993,6 @@
          "sport": "Football (M)",
          "winner": "Alabama Crimson Tide",
          "winner_metro": "Tuscaloosa, AL",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Ohio State Buckeyes",
-         "winner_metro": "Columbus, OH",
          "runner_up": "",
          "runner_up_metro": "",
          "final_four3": "",
@@ -2345,32 +2285,8 @@
       {
          "level": "college",
          "sport": "Football (M)",
-         "winner": "Arkansas Razorbacks",
-         "winner_metro": "Northwest Arkansas, AR",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
          "winner": "Alabama Crimson Tide",
          "winner_metro": "Tuscaloosa, AL",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Notre Dame Fighting Irish",
-         "winner_metro": "Notre Dame, IN",
          "runner_up": "",
          "runner_up_metro": "",
          "final_four3": "",
@@ -2478,18 +2394,6 @@
       },
       {
          "level": "college",
-         "sport": "Football (M)",
-         "winner": "Michigan State Spartans",
-         "winner_metro": "East Lansing, MI",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
          "sport": "Basketball (M)",
          "winner": "UTEP Miners",
          "winner_metro": "El Paso, TX",
@@ -2579,18 +2483,6 @@
          "sport": "Football (M)",
          "winner": "Notre Dame Fighting Irish",
          "winner_metro": "Notre Dame, IN",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Michigan State Spartans",
-         "winner_metro": "East Lansing, MI",
          "runner_up": "",
          "runner_up_metro": "",
          "final_four3": "",
@@ -2981,32 +2873,8 @@
       {
          "level": "college",
          "sport": "Football (M)",
-         "winner": "Texas Longhorns",
-         "winner_metro": "Austin, TX",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
          "winner": "Nebraska Cornhuskers",
          "winner_metro": "Lincoln, NE",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Ohio State Buckeyes",
-         "winner_metro": "Columbus, OH",
          "runner_up": "",
          "runner_up_metro": "",
          "final_four3": "",
@@ -3299,18 +3167,6 @@
       {
          "level": "college",
          "sport": "Football (M)",
-         "winner": "Alabama Crimson Tide",
-         "winner_metro": "Tuscaloosa, AL",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
          "winner": "Notre Dame Fighting Irish",
          "winner_metro": "Notre Dame, IN",
          "runner_up": "",
@@ -3411,18 +3267,6 @@
          "sport": "Football (M)",
          "winner": "Oklahoma Sooners",
          "winner_metro": "Oklahoma City, OK",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "USC Trojans",
-         "winner_metro": "Greater Los Angeles, CA",
          "runner_up": "",
          "runner_up_metro": "",
          "final_four3": "",
@@ -3823,30 +3667,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Florida A&M Rattlers",
-         "winner_metro": "Tallahassee, FL",
-         "runner_up": "Massachusetts Minutemen",
-         "runner_up_metro": "Springfield, MA",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "USC Trojans",
-         "winner_metro": "Greater Los Angeles, CA",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "Pittsburgh Steelers",
@@ -3945,18 +3765,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Eastern Kentucky Colonels",
-         "winner_metro": "Richmond, KY",
-         "runner_up": "Lehigh Mountain Hawks",
-         "runner_up_metro": "Lehigh Valley, NJ-PA",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "Pittsburgh Steelers",
@@ -4049,18 +3857,6 @@
          "winner_metro": "Athens, GA",
          "runner_up": "",
          "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Boise State Broncos",
-         "winner_metro": "Boise City, ID",
-         "runner_up": "Eastern Kentucky Colonels",
-         "runner_up_metro": "Richmond, KY",
          "final_four3": "",
          "final_four3_metro": "",
          "final_four4": "",
@@ -4171,18 +3967,6 @@
          "winner_metro": "Greenville, SC",
          "runner_up": "",
          "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Idaho State Bengals",
-         "winner_metro": "Pocatello, ID",
-         "runner_up": "Eastern Kentucky Colonels",
-         "runner_up_metro": "Richmond, KY",
          "final_four3": "",
          "final_four3_metro": "",
          "final_four4": "",
@@ -4310,18 +4094,6 @@
       }
    ],
    "1983": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Eastern Kentucky Colonels",
-         "winner_metro": "Richmond, KY",
-         "runner_up": "Delaware Fightin' Blue Hens",
-         "runner_up_metro": "Newark, DE",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -4456,18 +4228,6 @@
       }
    ],
    "1984": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Southern Illinois Salukis",
-         "winner_metro": "Carbondale, IL",
-         "runner_up": "Western Carolina Catamounts",
-         "runner_up_metro": "Cullowhee, NC",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -4615,18 +4375,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Montana State Bobcats",
-         "winner_metro": "Bozeman, MT",
-         "runner_up": "Louisiana Tech Bulldogs",
-         "runner_up_metro": "Monroe, LA",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "San Francisco 49ers",
@@ -4761,18 +4509,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Georgia Southern Eagles",
-         "winner_metro": "Statesboro, GA",
-         "runner_up": "Furman Paladins",
-         "runner_up_metro": "Greenville, SC",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "Chicago Bears",
@@ -4894,18 +4630,6 @@
       }
    ],
    "1987": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Georgia Southern Eagles",
-         "winner_metro": "Statesboro, GA",
-         "runner_up": "Arkansas State Red Wolves",
-         "runner_up_metro": "ERROR",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -5040,18 +4764,6 @@
       }
    ],
    "1988": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Louisiana-Monroe Warhawks",
-         "winner_metro": "Monroe, LA",
-         "runner_up": "Marshall Thundering Herd",
-         "runner_up_metro": "Huntington, WV",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -5199,18 +4911,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Furman Paladins",
-         "winner_metro": "Greenville, SC",
-         "runner_up": "Georgia Southern Eagles",
-         "runner_up_metro": "Statesboro, GA",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "San Francisco 49ers",
@@ -5332,18 +5032,6 @@
       }
    ],
    "1990": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Georgia Southern Eagles",
-         "winner_metro": "Statesboro, GA",
-         "runner_up": "Stephen F. Austin Lumberjacks",
-         "runner_up_metro": "Nacogdoches, TX",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -5481,30 +5169,6 @@
       {
          "level": "college",
          "sport": "Football (M)",
-         "winner": "Georgia Tech Yellow Jackets",
-         "winner_metro": "Atlanta, GA",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Georgia Southern Eagles",
-         "winner_metro": "Statesboro, GA",
-         "runner_up": "Nevada Wolf Pack",
-         "runner_up_metro": "Reno, NV",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
          "winner": "Colorado Buffaloes",
          "winner_metro": "Boulder, CO",
          "runner_up": "",
@@ -5639,32 +5303,8 @@
       {
          "level": "college",
          "sport": "Football (M)",
-         "winner": "Youngstown State Penguins",
-         "winner_metro": "Youngstown, OH",
-         "runner_up": "Marshall Thundering Herd",
-         "runner_up_metro": "Huntington, WV",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
          "winner": "Miami Hurricanes",
          "winner_metro": "Greater Miami Area, FL",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Washington Huskies",
-         "winner_metro": "Seattle,WA",
          "runner_up": "",
          "runner_up_metro": "",
          "final_four3": "",
@@ -5807,18 +5447,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Marshall Thundering Herd",
-         "winner_metro": "Huntington, WV",
-         "runner_up": "Youngstown State Penguins",
-         "runner_up_metro": "Youngstown, OH",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "Dallas Cowboys",
@@ -5953,18 +5581,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Youngstown State Penguins",
-         "winner_metro": "Youngstown, OH",
-         "runner_up": "Marshall Thundering Herd",
-         "runner_up_metro": "Huntington, WV",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "Dallas Cowboys",
@@ -6081,18 +5697,6 @@
          "winner_metro": "Lincoln, NE",
          "runner_up": "",
          "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Youngstown State Penguins",
-         "winner_metro": "Youngstown, OH",
-         "runner_up": "Boise State Broncos",
-         "runner_up_metro": "Boise City, ID",
          "final_four3": "",
          "final_four3_metro": "",
          "final_four4": "",
@@ -6233,18 +5837,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Montana Grizzlies",
-         "winner_metro": "Missoula, MT",
-         "runner_up": "Marshall Thundering Herd",
-         "runner_up_metro": "Huntington, WV",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "Dallas Cowboys",
@@ -6378,18 +5970,6 @@
       }
    ],
    "1997": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Marshall Thundering Herd",
-         "winner_metro": "Huntington, WV",
-         "runner_up": "Montana Grizzlies",
-         "runner_up_metro": "Missoula, MT",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -6539,34 +6119,10 @@
       {
          "level": "college",
          "sport": "Football (M)",
-         "winner": "Nebraska Cornhuskers",
-         "winner_metro": "Lincoln, NE",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
          "winner": "Michigan Wolverines",
          "winner_metro": "Ann Arbor, MI",
          "runner_up": "",
          "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Youngstown State Penguins",
-         "winner_metro": "Youngstown, OH",
-         "runner_up": "McNeese State Cowboys",
-         "runner_up_metro": "Lake Charles, LA",
          "final_four3": "",
          "final_four3_metro": "",
          "final_four4": "",
@@ -6719,18 +6275,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Massachusetts Minutemen",
-         "winner_metro": "Springfield, MA",
-         "runner_up": "Georgia Southern Eagles",
-         "runner_up_metro": "Statesboro, GA",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "Denver Broncos",
@@ -6871,18 +6415,6 @@
          "winner_metro": "Tallahassee, FL",
          "runner_up": "",
          "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Georgia Southern Eagles",
-         "winner_metro": "Statesboro, GA",
-         "runner_up": "Youngstown State Penguins",
-         "runner_up_metro": "Youngstown, OH",
          "final_four3": "",
          "final_four3_metro": "",
          "final_four4": "",
@@ -7035,18 +6567,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Georgia Southern Eagles",
-         "winner_metro": "Statesboro, GA",
-         "runner_up": "Montana Grizzlies",
-         "runner_up_metro": "Missoula, MT",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "Baltimore Ravens",
@@ -7193,18 +6713,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Montana Grizzlies",
-         "winner_metro": "Missoula, MT",
-         "runner_up": "Furman Paladins",
-         "runner_up_metro": "Greenville, SC",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "New England Patriots",
@@ -7338,18 +6846,6 @@
       }
    ],
    "2003": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Western Kentucky Hilltoppers",
-         "winner_metro": "Bowling Green, KY",
-         "runner_up": "McNeese State Cowboys",
-         "runner_up_metro": "Lake Charles, LA",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -7509,30 +7005,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Delaware Fightin' Blue Hens",
-         "winner_metro": "Newark, DE",
-         "runner_up": "Colgate Raiders",
-         "runner_up_metro": "Hamilton, NY",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "USC Trojans",
-         "winner_metro": "Greater Los Angeles, CA",
-         "runner_up": "",
-         "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "New England Patriots",
@@ -7666,18 +7138,6 @@
       }
    ],
    "2005": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "James Madison Dukes",
-         "winner_metro": "Harrisonburg, VA",
-         "runner_up": "Montana Grizzlies",
-         "runner_up_metro": "Missoula, MT",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -7819,18 +7279,6 @@
          "winner_metro": "Austin, TX",
          "runner_up": "",
          "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Appalachian State Mountaineers",
-         "winner_metro": "Boone, NC",
-         "runner_up": "Northern Iowa Panthers",
-         "runner_up_metro": "Cedar Falls, IA",
          "final_four3": "",
          "final_four3_metro": "",
          "final_four4": "",
@@ -7983,18 +7431,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Appalachian State Mountaineers",
-         "winner_metro": "Boone, NC",
-         "runner_up": "Massachusetts Minutemen",
-         "runner_up_metro": "Springfield, MA",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "Indianapolis Colts",
@@ -8135,18 +7571,6 @@
          "winner_metro": "Baton Rouge, LA",
          "runner_up": "",
          "runner_up_metro": "",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Appalachian State Mountaineers",
-         "winner_metro": "Boone, NC",
-         "runner_up": "Delaware Fightin' Blue Hens",
-         "runner_up_metro": "Newark, DE",
          "final_four3": "",
          "final_four3_metro": "",
          "final_four4": "",
@@ -8299,18 +7723,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Richmond Spiders",
-         "winner_metro": "Richmond, VA",
-         "runner_up": "Montana Grizzlies",
-         "runner_up_metro": "Missoula, MT",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "Pittsburgh Steelers",
@@ -8444,18 +7856,6 @@
       }
    ],
    "2010": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "Villanova Wildcats",
-         "winner_metro": "Greater Philadelphia, PA",
-         "runner_up": "Montana Grizzlies",
-         "runner_up_metro": "Missoula, MT",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -8605,18 +8005,6 @@
       {
          "level": "college",
          "sport": "Football (M)",
-         "winner": "Eastern Washington Eagles",
-         "winner_metro": "Spokane, WA",
-         "runner_up": "Delaware Fightin' Blue Hens",
-         "runner_up_metro": "Newark, DE",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
          "winner": "Auburn Tigers",
          "winner_metro": "Auburn, AL",
          "runner_up": "",
@@ -8760,18 +8148,6 @@
       }
    ],
    "2012": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "North Dakota State Bison",
-         "winner_metro": "Fargo, ND",
-         "runner_up": "Sam Houston State Bearkats",
-         "runner_up_metro": "Huntsville, TX",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -8921,18 +8297,6 @@
       {
          "level": "college",
          "sport": "Football (M)",
-         "winner": "North Dakota State Bison",
-         "winner_metro": "Fargo, ND",
-         "runner_up": "Sam Houston State Bearkats",
-         "runner_up_metro": "Huntsville, TX",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
          "winner": "Alabama Crimson Tide",
          "winner_metro": "Tuscaloosa, AL",
          "runner_up": "",
@@ -9064,18 +8428,6 @@
       }
    ],
    "2014": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "North Dakota State Bison",
-         "winner_metro": "Fargo, ND",
-         "runner_up": "Florida State Seminoles",
-         "runner_up_metro": "Tallahassee, FL",
-         "final_four3": "Virginia Cavaliers",
-         "final_four3_metro": "Charlottesville, VA",
-         "final_four4": "Virginia Tech Hokies",
-         "final_four4_metro": "Blacksburg, VA"
-      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -9225,18 +8577,6 @@
       {
          "level": "college",
          "sport": "Football (M)",
-         "winner": "North Dakota State Bison",
-         "winner_metro": "Fargo, ND",
-         "runner_up": "Illinois State Redbirds",
-         "runner_up_metro": "Normal, IL",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
-         "level": "college",
-         "sport": "Football (M)",
          "winner": "Ohio State Buckeyes",
          "winner_metro": "Columbus, OH",
          "runner_up": "Oregon Ducks",
@@ -9380,18 +8720,6 @@
       }
    ],
    "2016": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "North Dakota State Bison",
-         "winner_metro": "Fargo, ND",
-         "runner_up": "Jacksonville State Gamecocks",
-         "runner_up_metro": "Calhoun County, AL",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
       {
          "level": "college",
          "sport": "Football (M)",
@@ -9551,18 +8879,6 @@
          "final_four4_metro": ""
       },
       {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "James Madison Dukes",
-         "winner_metro": "Harrisonburg, VA",
-         "runner_up": "Youngstown State Penguins",
-         "runner_up_metro": "Youngstown, OH",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
-      {
          "level": "pro",
          "sport": "NFL",
          "winner": "New England Patriots",
@@ -9696,18 +9012,6 @@
       }
    ],
    "2018": [
-      {
-         "level": "college",
-         "sport": "Football (M)",
-         "winner": "North Dakota State Bison",
-         "winner_metro": "Fargo, ND",
-         "runner_up": "James Madison Dukes",
-         "runner_up_metro": "Harrisonburg, VA",
-         "final_four3": "",
-         "final_four3_metro": "",
-         "final_four4": "",
-         "final_four4_metro": ""
-      },
       {
          "level": "college",
          "sport": "Football (M)",

@@ -73,11 +73,24 @@ class TestOOAPI(unittest.TestCase):
         # see if get_city matches expected
         self.assertEqual(result_get_city, expected)
 
+    def test_get_cities(self):
+
+        # initalize database
+        cdb = champ_database()
+        cdb.load_city_data("data_by_year_start1940.json")
+        expected = ['College Station, TX', 'Bloomington, IN', 'New York Metro Area', 'Cincinnati, OH', 'Chicago, IL', 'Twin Cities, MN', 'Madison, WI', 'Greater Boston, MA', 'San Francisco Bay Area, CA', 'Toronto, ON', 'St. Louis, MO', 'Washington, DC Metro Area', 'Columbus, OH', 'Cheyenne, WY', 'Metro Detroit, MI', 'Notre Dame, IN', 'Salt Lake City, UT', 'Montreal, QC', 'Green Bay, WI', 'West Point, NY', 'Stillwater, OK', 'Cleveland, OH', 'Worcester, MA', 'Greater Philadelphia, PA', 'Lexington-Fayette, KY', 'Baltimore, MD', 'Ann Arbor, MI', 'Oklahoma City, OK', 'Rochester, NY', 'Greater Los Angeles, CA', 'Knoxville, TN', 'Lawrence, KS', 'East Lansing, MI', 'Syracuse, NY', 'Greater Raleigh, NC', 'Milwaukee, WI', 'Auburn, AL', 'Iowa City, IA', 'Baton Rouge, LA', 'Pittsburgh, PA', 'Oxford, MS', 'Tuscaloosa, AL', 'Austin, TX', 'Northwest Arkansas, AR', 'El Paso, TX', 'Kansas City, MO', 'Lincoln, NE', 'Dallas-Fort Worth, TX', 'Greater Miami Area, FL', 'Portland Metro Area, OR', 'Tallahassee, FL', 'Seattle,WA', 'Richmond, KY', 'Louisville, KY', 'Athens, GA', 'Boise City, ID', 'Greenville, SC', 'Pocatello, ID', 'Monroe, LA', 'State College, PA', 'Columbia, SC', 'Carbondale, IL', 'Edmonton, AB', 'Provo, UT', 'Bozeman, MT', 'Norfolk, VA', 'Statesboro, GA', 'Calgary, AB', 'Las Vegas, NV', 'Atlanta, GA', 'Boulder, CO', 'Youngstown, OH', 'Huntington, WV', 'Lubbock, TX', 'Houston, TX', 'Hartford, CT', 'Missoula, MT', 'Denver, CO', 'Gainesville, FL', 'Tucson, AZ', 'Springfield, MA', 'San Antonio, TX', 'West Lafayette, IN', 'Metro Phoenix, AZ', 'Bowling Green, KY', 'Tampa Bay Area, FL', 'Newark, DE', 'Harrisonburg, VA', 'Waco, TX', 'Boone, NC', 'Indianapolis Metro Area, IN', 'Richmond, VA', 'New Orleans, LA', 'Spokane, WA', 'Fargo, ND']
+
+        # call get cities
+        result_get_cities = list(cdb.get_cities())
+
+        # see if get_city matches expected
+        self.assertEqual(result_get_cities,expected)
+
     def test_set_city(self):
         # initalize database
         cdb = champ_database()
         #cdb.load_city_data("data_by_year_start1940.json")
-    
+
         # change cdb using set
         city = "Steubenville, OH"
         expected = 100
