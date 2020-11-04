@@ -13,6 +13,9 @@ TESTING SERVER/API:
 In order to  run the server run the file 'server.py found in the 'Server' directory on a different 
 window.  The server is currently set to run on 'localhost'. Then while in the 'Server' directory, run 'python test_requests.py' to run our test that make sure the controllers and handlers are wokring correctly. To just test the OO API, go into the 'OOAPI' directory and run 'python3 test_OOAPI.py'. The server does not need to be running to test this.
 
+TESTING WEB CLIENT:
+Testing the webclient was relatively simple for our website. To test feature one, we tested a bunch of sample years and made sure the champions listed for the year matched up with what we expected when compared to our database values, our own memory, and wikipedia answers. To test feature two, we simply compared a bunch of different cities and checked against our own knowledge as well as checking that it reflected the database's data to make sure that the number of championships shown made sense.
+
 USER INTERACTION:
 Our website has two features - 1) championships in a year, 2) comparing the championships of two cities since 1940
 1) To interact with the first feature, click on the dropdown to select a year and then hit "Go". It will then populate the webpage with the winners in several major sports in the chosen year.
