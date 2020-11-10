@@ -22,7 +22,8 @@ Our website has two features - 1) championships in a year, 2) comparing the cham
 2) To interact with the second feature, click on both dropdowns to select to different cities and then hit "Go". It will then show you (graphically and in text) the comparison of the number of championships in each city since 1940 (comprised only of the sports shown in Feature 1)
 
 RUNNING SERVER:
-Our server is run on port 51081 and is by default set to localhost. In order to sun the server, enter the Server directory and run the file named 'server.py'  This can be done in a terminal by running the command 'python server.py' form the server directory. Once yo have done this the server should be running. At this point you can go to the following link: https://rdomel.gitlab.io/SportsChampsWebsite/jsfrontend/mainPage.html This is the front end of our project. See 'USER INTERACTION' for how to use the front end.
+UOur server is run on port 51081 and is by default set to localhost. In order to sun the server, enter the Server directory and run the file named 'server.py'  This can be done in a terminal by running the command 'python server.py' form the "Server" directory. Once you have done this the server should be running. At this point you can go to the following link: https://rdomel.gitlab.io/SportsChampsWebsite/jsfrontend/mainPage.html (DO NOT USE SAFARI)
+Now, to use the front end, see the 'USER INTERACTION' for how to use the front end.
 
 JSON SPECIFICATION:
 To see json specification, click on the following link: https://docs.google.com/document/d/1TDIrrV_5wHV8K28aR1vJk4iekL0Xt5zJkR2hsd3nV2c/edit
