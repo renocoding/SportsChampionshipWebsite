@@ -24,3 +24,6 @@ Our website has two features - 1) championships in a year, 2) comparing the cham
 
 JSON SPECIFICATION:
 To see json specification, click on the following link: https://docs.google.com/document/d/1TDIrrV_5wHV8K28aR1vJk4iekL0Xt5zJkR2hsd3nV2c/edit
+
+SCALE AND COMPLEXITY:
+We assessed the complexity of our project as being about medium complexity. It was not easy setting up the server, being that there are three resource endpoints, and furthermore, there was a lot of data too manage (JSON specification was "heavy"). However, it was not overwhelmingly complex because we mostly parse GET requests. As for the scale, we think the scale of the project is slightly greater than average. This is simply because we had so much data to parse and think about (So much sports data!). Similarly, it was still managable because our use and analysis of the data wasn't too overly complicated.
