@@ -30,3 +30,8 @@ To see json specification, click on the following link: https://docs.google.com/
 
 SCALE AND COMPLEXITY:
 We assessed the complexity of our project as being about medium complexity. It was not easy setting up the server, being that there are three resource endpoints, and furthermore, there was a lot of data too manage (JSON specification was "heavy"). However, it was not overwhelmingly complex because we mostly parse GET requests. As for the scale, we think the scale of the project is slightly greater than average. This is simply because we had so much data to parse and think about (So much sports data!). Similarly, it was still managable because our use and analysis of the data wasn't too overly complicated.
+
+LINK TO VIDEO AND SLIDES:
+Code Walkthrough: https://drive.google.com/file/d/1_uGr72L_0pw1hrWa_BvS-NtTikZZUIrX/view?usp=sharing
+Front End Walkthrough: https://drive.google.com/file/d/1kiBWCUj_PvcivGaZw8OEBlN_V6wm_Js6/view?usp=sharing
+Presentation Slides: https://docs.google.com/presentation/d/1yhsdHIC8SN3TonQIm-VIJyBT7dS7DD8N341lXPtb5NY/edit?usp=sharing
