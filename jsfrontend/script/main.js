@@ -17,7 +17,8 @@ url = "http://localhost:51081"
 // info on adding options from stackoverflow
 var yearSelect = document.getElementById("select-year");
 
-for (i = 1941; i < 2019; i++)
+// years stop at 2019
+for (i = 1941; i < 2020; i++)
 {
     // add year to select
     var option = document.createElement("option");
